@@ -32,4 +32,10 @@ function fibs(n) {
    } return array
 }
 
-console.log(fibs(10));
+function fibsRec(n) {
+    if (n < 2){return n}; 
+    return fibsRec(n-1) + fibsRec(n-2);
+}
+
+console.log(`First 10th fibonacci numbers are ${fibs(10)}`);
+console.log(`7th Fibonacci number using recursive method ${fibsRec(7)}`); 
