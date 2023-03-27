@@ -20,8 +20,7 @@ function fibs(n) {
 }
 
 function fibsRec(n) {
-    if (n < 2) return n; 
-    return fibsRec(n-1) + fibsRec(n-2); 
+  return n < 2 ? n : fibsRec(n-1) + fibsRec(n-2);
 }
 
 module.exports = fibsRec;
