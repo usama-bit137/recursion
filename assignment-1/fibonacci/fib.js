@@ -19,8 +19,7 @@ function fibs(n) {
    } return array
 }
 
-function fibsRec(n) {
-  return n < 2 ? n : fibsRec(n-1) + fibsRec(n-2);
-}
+const fibsRec = (n) => n < 2 ? n : [fib[n-1], fibsRec(n-1) + fibsRec(n-2)];
+
 
 module.exports = fibsRec;
